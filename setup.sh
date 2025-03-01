@@ -44,7 +44,7 @@ chmod +x /usr/local/bin/load_generator.py
         --size=1
 
     # Wait for MIG to stabilize
-    sleep 100
+    sleep 60
 
     # Configure Auto-Scaling
     gcloud compute instance-groups managed set-autoscaling $MIG_NAME \
